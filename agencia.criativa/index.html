@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Criativa Web</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Agência Criativa Web</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="banner">
+        <div class="banner-texto">
+            <h1>Transformamos ideias em experiências digitais</h1>
+            <p>Sites modernos, design profissional e branding estratégico.</p>
+        </div>
+
+        <img
+            src="imagens/banner-800.jpg"
+            srcset="imagens/banner-400.jpg 400w,
+                    imagens/banner-800.jpg 800w,
+                    imagens/banner-1200.jpg 1200w"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            alt="Equipe de design digital trabalhando"
+            class="banner-img">
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos especialistas em criar soluções digitais modernas, funcionais e atrativas para marcas que desejam crescer no ambiente online.</p>
+    </section>
+
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="grid-servicos">
+            <div class="card">Design Gráfico</div>
+            <div class="card">Desenvolvimento Web</div>
+            <div class="card">Branding</div>
+            <div class="card">Marketing Digital</div>
+        </div>
+    </section>
+
+    <section id="depoimentos">
+        <h2>Depoimentos</h2>
+        <div class="comentarios">
+            <div class="depoimento">“Excelente trabalho e ótimo atendimento.”</div>
+            <div class="depoimento">“Nossa marca cresceu muito após o novo site.”</div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu e-mail" required>
+            <textarea placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+</body>
+</html>
