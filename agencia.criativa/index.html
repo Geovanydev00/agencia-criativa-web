@@ -8,65 +8,86 @@
 </head>
 <body>
 
-    <header>
-        <div class="logo">Agência Criativa Web</div>
-        <nav>
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#depoimentos">Depoimentos</a></li>
-                <li><a href="#contato">Contato</a></li>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="header__logo">Agência Criativa Web</div>
+
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__item"><a class="header__link" href="#home">Home</a></li>
+                <li class="header__item"><a class="header__link" href="#sobre">Sobre</a></li>
+                <li class="header__item"><a class="header__link" href="#servicos">Serviços</a></li>
+                <li class="header__item"><a class="header__link" href="#depoimentos">Depoimentos</a></li>
+                <li class="header__item"><a class="header__link" href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="banner">
-        <div class="banner-texto">
-            <h1>Transformamos ideias em experiências digitais</h1>
-            <p>Sites modernos, design profissional e branding estratégico.</p>
+    <!-- Banner -->
+    <section id="home" class="hero">
+        <div class="hero__content">
+            <h1 class="hero__title">Transformamos ideias em experiências digitais</h1>
+            <p class="hero__text">
+                Sites modernos, design profissional e branding estratégico.
+            </p>
         </div>
 
         <img
+            class="hero__image"
             src="imagens/banner-800.jpg"
-            srcset="imagens/banner-400.jpg 400w,
-                    imagens/banner-800.jpg 800w,
-                    imagens/banner-1200.jpg 1200w"
+            srcset="
+                imagens/banner-400.jpg 400w,
+                imagens/banner-800.jpg 800w,
+                imagens/banner-1200.jpg 1200w
+            "
             sizes="(max-width: 768px) 100vw, 50vw"
-            alt="Equipe de design digital trabalhando"
-            class="banner-img">
+            alt="Equipe de design digital">
     </section>
 
-    <section id="sobre">
-        <h2>Sobre Nós</h2>
-        <p>Somos especialistas em criar soluções digitais modernas, funcionais e atrativas para marcas que desejam crescer no ambiente online.</p>
+    <!-- Sobre -->
+    <section id="sobre" class="about">
+        <h2 class="about__title">Sobre Nós</h2>
+        <p class="about__text">
+            Somos uma agência especializada em design digital, focada em criar soluções modernas e inovadoras.
+        </p>
     </section>
 
-    <section id="servicos">
-        <h2>Nossos Serviços</h2>
-        <div class="grid-servicos">
-            <div class="card">Design Gráfico</div>
-            <div class="card">Desenvolvimento Web</div>
-            <div class="card">Branding</div>
-            <div class="card">Marketing Digital</div>
+    <!-- Serviços -->
+    <section id="servicos" class="services">
+        <h2 class="services__title">Nossos Serviços</h2>
+
+        <div class="services__grid">
+            <div class="services__card">Design Gráfico</div>
+            <div class="services__card">Desenvolvimento Web</div>
+            <div class="services__card">Branding</div>
+            <div class="services__card">Marketing Digital</div>
         </div>
     </section>
 
-    <section id="depoimentos">
-        <h2>Depoimentos</h2>
-        <div class="comentarios">
-            <div class="depoimento">“Excelente trabalho e ótimo atendimento.”</div>
-            <div class="depoimento">“Nossa marca cresceu muito após o novo site.”</div>
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="testimonials">
+        <h2 class="testimonials__title">Depoimentos</h2>
+
+        <div class="testimonials__list">
+            <div class="testimonials__item">
+                Excelente trabalho e ótimo atendimento.
+            </div>
+
+            <div class="testimonials__item">
+                Nossa marca cresceu muito após o novo site.
+            </div>
         </div>
     </section>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <form>
-            <input type="text" placeholder="Seu nome" required>
-            <input type="email" placeholder="Seu e-mail" required>
-            <textarea placeholder="Sua mensagem" required></textarea>
-            <button type="submit">Enviar</button>
+    <!-- Contato -->
+    <section id="contato" class="contact">
+        <h2 class="contact__title">Contato</h2>
+
+        <form class="contact__form">
+            <input class="contact__input" type="text" placeholder="Seu nome" required>
+            <input class="contact__input" type="email" placeholder="Seu e-mail" required>
+            <textarea class="contact__textarea" placeholder="Sua mensagem" required></textarea>
+            <button class="button button--primary" type="submit">Enviar</button>
         </form>
     </section>
 
