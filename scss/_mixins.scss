@@ -1,0 +1,14 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin botao-basico($bg) {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: $bg;
+    color: white;
+    cursor: pointer;
+}

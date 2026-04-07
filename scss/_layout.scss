@@ -1,0 +1,52 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $espacamento 5%;
+    background: $cor-escura;
+
+    &__logo {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    &__menu {
+        display: flex;
+        gap: $espacamento;
+        list-style: none;
+    }
+
+    &__link {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            color: $cor-primaria;
+        }
+    }
+}
+
+.hero {
+    @include flex-center;
+    justify-content: space-between;
+    min-height: 80vh;
+    padding: 5vw;
+    gap: $espacamento;
+    background: linear-gradient(135deg, $cor-primaria, $cor-secundaria);
+    color: white;
+
+    &__title {
+        font-size: 3rem;
+        margin-bottom: $espacamento / 2;
+    }
+
+    &__image {
+        width: 45vw;
+        max-width: 500px;
+        border-radius: $raio;
+    }
+}
